@@ -32,6 +32,7 @@ form.addEventListener('submit', e => {
     params: keyValuePairsToObjects(queryParamsContainer),
     headers: keyValuePairsToObjects(requestHeadersContainer)
   }).then(response => {
+    document.querySelector('[data-response-section]').classList.remove('d-none');
     console.log(response);
   });
 });
