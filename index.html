@@ -9,16 +9,16 @@
 </head>
 <body>
   <div class="p-4">
-    <form>
+    <form data-form>
       <div class="input-group mb-4">
-        <select class="form-select flex-grow-0 w-auto">
+        <select class="form-select flex-grow-0 w-auto" data-method>
           <option value="GET" selected>GET</option>
           <option value="POST">POST</option>
           <option value="PUT">PUT</option>
           <option value="PATCH">PATCH</option>
           <option value="DELETE">DELETE</option>
         </select>
-        <input requred class="form-control" type="url" placeholder="https://www.example.com/" />
+        <input data-url requred class="form-control" type="url" placeholder="https://www.example.com/" />
         <button type="submit" class="btn btn-primary">Send</button>
       </div>
 
